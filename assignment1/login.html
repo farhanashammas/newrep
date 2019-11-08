@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Login</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <script src="jquery.min.js"></script>
+  <script src="popper.min.js"></script>
+</head>
+<body style="background-color: rgba(212, 209, 209, 0.911);">
+
+<nav class="navbar navbar-expand-sm  navbar-dark" style="background-color: rgb(16, 1, 100);">
+    <ul class="navbar-nav">
+         <li class="nav-item active">
+             <a class="nav-link" href="index.html">HOME</a>
+         </li>
+         <li class="nav-item active">
+              <a class="nav-link" href="login.html">LOGIN</a>
+         </li>
+         <li class="nav-item active">
+              <a class="nav-link" href="signup.html">SIGN UP</a>
+         </li>
+         <li class="nav-item active">
+          <a class="nav-link" href="#">CONTACT</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">ABOUT</a>
+        </li>
+     </ul>
+ </nav>
+
+    
+
+
+ <div class="jumbotron jumbotron-fluid" style="background-color: rgb(1, 1, 43);" >
+        <div class="container text-light">
+          <h1 style="margin-left: 55%;">Login</h1> 
+         </div>
+  </div>
+
+
+ <div class="container row" >
+    <div class="col-sm-8"></div>
+    <div class="col-sm-2">
+  <form action="index.html" onsubmit="return false" class="was-validated">
+      
+    <div class="form-group form-inline">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" style="margin-inline-start:20px" required >
+     
+    </div>
+    <div class="form-group form-inline">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd" required style="margin-inline-start:100px">
+     
+    </div>
+   
+      <button type="submit" class="btn btn-primary" >Login</button>
+  </form>
+ </div>
+</div>
+
+</body>
+</html>
