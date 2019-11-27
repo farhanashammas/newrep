@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/bootstrap.min.js"></script>
+    <title>Home</title>
+</head>
+
+<body class="body">
+
+  <div class="navbar navbar-expand-sm  navbar-dark mynav" >
+            <%for(var i=0;i<nav.length;i++){%>
+                 <ul class="navbar-nav">
+                     <li class="nav-item active"><a class="nav-link" href="<%=nav[i].link%>"><%=nav[i].title%></a></li>
+                 </ul>
+            <%}%>
+        </div>
+
+        <div class="jumbotron jumbotron-fluid title">
+         <div class="container text-light">
+             <h1><%=title%></h1>  
+         </div>
+     </div>
+
+     <div class="jumbotron content">
+             <div class="container">
+                 <div class="media">
+                     <img src="/image/billgates.jpg" class="align-self-start mr-3 rounded-circle image">
+                     <div class="media-body">
+                       <h4 class="text-muted">Repurpose content to reach a wider audience</h4>
+                       <button type="button" class="btn btn-secondary">97thfloor.com</button>
+                       <br>
+                       <label class="text-muted">2 hours ago.</label>
+                       <label class="text-muted"><a href="#">Read more</a></label>
+                     </div>
+                   </div>
+               <div>
+                 <br>
+                 <br>
+                 <br>
+               </div>
+             <div class="media">
+                 <img src="/image/stevejobs.jpg" alt="steve jobs" class="align-self-start mr-3 rounded-circle image" >
+                 <div class="media-body">
+                     <h4 class="text-muted">14 Useful sites for designers</h4>
+                     <button type="button" class="btn btn-secondary">apple.com</button>
+                     <br>
+                     <label class="text-muted">3 hours ago.</label>
+                     <label class="text-muted"><a href="#">Read more</a></label>
+                   </div>
+               </div>
+             </div>
+           </div>
+
+</body>
+</html>

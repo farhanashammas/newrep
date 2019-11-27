@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/signupval.js"></script> 
+    <title>Sign Up</title>
+</head>
+
+    <body class="body">
+
+        <div class="navbar navbar-expand-sm  navbar-dark mynav">
+            <%for(var i=0;i<nav.length;i++){%>
+                 <ul class="navbar-nav">
+                     <li class="nav-item active"><a class="nav-link" href="<%=nav[i].link%>"><%=nav[i].title%></a></li>
+                 </ul>
+            <%}%>
+        </div>
+
+     <div class="jumbotron jumbotron-fluid title" >
+         <div class="container text-light">
+             <h1><%=title%></h1> 
+         </div>
+     </div>
+        
+     <form action="/signup/signedup" method="POST" name='signup' class="input" onsubmit="return validateForm(this)">
+        <div class="jumbotron content">
+            <div class="container">
+                <div class="form-group form-inline">
+                    <label >First Name:</label>
+                    <input type="text" class="form-control required"  placeholder="First Name" style="margin-inline-start: 70px;" required>
+                    <label style="margin-inline-start: 100px;" >Last Name:</label>
+                    <input type="text" class="form-control required"  placeholder="Last Name" style="margin-inline-start: 10px;">
+                </div>
+                <div class="form-group form-inline">   
+                    <label>DOB:</label>
+                    <input type="date" name="bday" class="form-control" style="margin-inline-start: 115px;" required>
+                </div>
+                <div class="form-group form-inline">
+                    <label>  Gender:</label>
+                    <div class="form-check">
+                        <label class="form-check-label" for="radio1">
+                            <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" style="margin-inline-start: 100px;;" checked style="margin-inline-start: 80px;;">Male
+                            <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2" style="margin-inline-start: 10px;;">Female
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Languages Known:</label>
+                    <label class="form-check-label" for="check1" style="margin-inline-start: 35px;;">
+                    <input type="checkbox" class="form-check-input" id="check1" name="option1" value="something" checked disabled>English
+                    <br>
+                    <input type="checkbox" class="form-check-input" id="check2" name="option2" value="something">Hindi
+                    <br>
+                    <input type="checkbox" class="form-check-input" id="check3" name="option3" value="something">Malayalam
+                </div>
+                <div class="form-group form-inline">
+                    <label >Address:</label>
+                    <textarea class="form-control" rows="3" id="comment" name="text" placeholder="Address" style="margin-inline-start: 90px;" required></textarea>
+                    <label for="text" style="margin-inline-start: 115px;;">Country:</label>
+                    <br>
+                    <input type="text" class="form-control" placeholder="Country" style="margin-inline-start: 10px;">
+                </div>
+                <div class="form-group form-inline">
+                    <label>Phone:</label>
+                    <input type="number" id="phone" class="form-control" required placeholder="Phone Number" style="margin-inline-start: 100px;">
+                </div>
+                <div class="form-group form-inline">
+                    <label for="email">Email:</label>
+                    <input type="text" class="form-control" id="email" placeholder="Enter email" name="email" required style="margin-inline-start: 105px;;">
+                </div>
+                <div class="form-group form-inline">
+                    <label for="email">Password:</label>
+                    <input type="password" class="form-control" id="pwd1" placeholder="Enter 8 letter password" name="pwd" required style="margin-inline-start: 75px;">
+                </div>
+                <div class="form-group form-inline">
+                    <label for="email">Confirm Password:</label>
+                    <input type="password" class="form-control" id="pwd2" placeholder="Confirm Password" name="pwd" required style="margin-inline-start: 7px;">
+                </div>
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+            </div>
+        </div>
+        </form> 
+
+    </body>
+</html>

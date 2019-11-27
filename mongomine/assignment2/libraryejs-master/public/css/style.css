@@ -1,0 +1,30 @@
+.body{
+    background-color: rgba(155, 153, 165, 0.884);
+}
+.mynav{
+    background-color: rgb(16, 1, 100)
+}
+.title{
+    background-color: rgb(1, 1, 43)
+}
+.content{
+    border-radius: 0%; 
+    margin-top:-80px;
+    margin-right:100px;
+    margin-left:100px;
+    background-color: white;
+}
+.input{
+    font-weight: 700;
+}
+.image{
+    width:100px;
+    height: 100px;
+}
+.img{
+    width: 140px;
+    height:80px
+}
+.img1{
+    width: 80px;
+}
